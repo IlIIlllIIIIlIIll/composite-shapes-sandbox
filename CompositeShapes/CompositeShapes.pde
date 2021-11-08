@@ -5,6 +5,7 @@ float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
 float noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
 float mouthX1, mouthY1, mouthX2, mouthY2;
+float mouthThicc, reset; 
 //
 //Geometry
 size(700, 500);
@@ -32,6 +33,8 @@ mouthX1 = leftEyeX ;
 mouthY1 = height*3/4 ;
 mouthX2 = rightEyeX ; 
 mouthY2 = mouthY1 ;
+mouthThicc = ;
+reset = 1;
 //
 //Canvas
 rect(rectX, rectY, rectWidth, rectHeight);
@@ -39,4 +42,6 @@ ellipse(faceX, faceY, faceDiameter, faceDiameter);
 ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
+strokeWeight(mouthThicc);
 line(mouthX1, mouthY1, mouthX2, mouthY2);
+strokeWeight(reset);
