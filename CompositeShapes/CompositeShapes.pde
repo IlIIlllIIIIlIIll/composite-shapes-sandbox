@@ -42,66 +42,25 @@ void setup() {
   //
 }//End setup()
 //
-void draw() {}//End draw()
-
-measleX = random(width);
-measleY = random(height);
-measleDiameter = random(width*1/30, width*1/10);
-//
-//Canvas
-rect(rectX, rectY, rectWidth, rectHeight);
-ellipse(faceX, faceY, faceDiameter, faceDiameter);
-ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
-ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
-triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
-strokeWeight(mouthThick);
-line(mouthX1, mouthY1, mouthX2, mouthY2);
-strokeWeight(reset);
-fill(measlesColour);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-ellipse(measleX, measleY, measleDiameter, measleDiameter);
-fill(resetColour);
+void draw() {
+  //Population that changes
+  measleX = random(width);
+  measleY = random(height);
+  measleDiameter = random(width*1/30, width*1/10);
+  //
+  //Canvas
+  rect(rectX, rectY, rectWidth, rectHeight);
+  fill(measlesColour);
+  ellipse(measleX, measleY, measleDiameter, measleDiameter);
+  fill(resetColour);
+  ellipse(faceX, faceY, faceDiameter, faceDiameter);
+  ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
+  ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+  triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
+  strokeWeight(mouthThick);
+  line(mouthX1, mouthY1, mouthX2, mouthY2);
+  strokeWeight(reset);
+  fill(measlesColour);
+  ellipse(measleX, measleY, measleDiameter, measleDiameter);
+  fill(resetColour);
+}//End draw()
